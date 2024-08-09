@@ -1,9 +1,11 @@
+/* General Setup */
 :root {
     --black: #353535;
     --white: #F5F3F5;
     --orange: #D16946;
     --dark-blue: #5A6E7B;
     --navbar-black: #2c2b2b;
+    --gray: #4e4e4e;
 }
 
 * {
@@ -21,10 +23,12 @@ body {
     background-color: var(--black);
 }
 
+/* Navigation Bar */
 .navbar {
     position: fixed;
     background-color: var(--navbar-black);
     width: 100%;
+    z-index: 10;
 }
 
 .navbar a {
@@ -54,4 +58,62 @@ body {
 
 .navlist .active {
     background-color: var(--orange);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--navbar-black);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Footer */
+footer {
+    width: 95%;
+    margin: 60px auto 30px;
+    font-size: small;
+}
+
+footer hr {
+    border: 1px solid var(--orange);
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer .page-directory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 100px;
+    align-content: flex-start;
+    column-gap: 40px;
+}
+
+footer a:hover {
+    color: var(--orange);
+    font-size: large;
+}
+
+footer .sublist {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+    footer {
+        display: none;
+    }
 }

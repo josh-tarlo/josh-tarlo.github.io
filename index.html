@@ -13,14 +13,22 @@
     <!-- Nav bar -->
     <nav class="navbar" id="navbar">
         <ul class="navlist">
-            <li><a class="active" href="#welcome-section">Welcome</a></li>
+            <li><a class="active" href="index.html">Welcome</a></li>
             <li><a href="about-me.html">About Me</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="#featured-pages">GitHub</a></li>
-            <li><a href="#featured-pages">Projects</a></li>
-            </ul>
-            </nav>
-            <!-- End of Nav bar -->
+            <li><a href="https://github.com/josh-tarlo">GitHub</a></li>
+            <li class="dropdown">
+                <a href="projects.html">Projects</a>
+                <div class="dropdown-content">
+                    <a href="#">Project 1</a>
+                    <a href="#">Project 2</a>
+                    <a href="#">Project 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- End of Nav bar -->
+
     <main>
         <!-- Title Section -->
         <section id="welcome-section" class="welcome">
@@ -31,36 +39,52 @@
 
         <!-- Featured Pages Section -->
         <section id="featured-pages" class="featured-pages">
-            <h2>Featured Pages</h2>
             <div class="featured-pages-list">
-                <a class="page">
+                <a class="page" href="about-me.html">
                     <img src="images/Silhouette.png" alt="silhoutte icon" />
                     <p>About Me</p>
                 </a>
-                <a class="page" target="_blank" href="https://github.com/josh-tarlo" id="profile-link">
-                    <img src="images/GitHub-Logo.png"
-                        alt="github icon" />
+                <a class="page" href="https://github.com/josh-tarlo" id="profile-link">
+                    <img src="images/GitHub-Logo.png" alt="github icon" />
                     <p>GitHub Profile</p>
                 </a>
-                <a class="page" target="_blank">
-                    <img src="images/Resume-Clipart.png"
-                        alt="resume icon" />
+                <a class="page" href="resume.html">
+                    <img src="images/Resume-Clipart.png" alt="resume icon" />
                     <p>Resume</p>
                 </a>
-                <a class="page" target="_blank">
-                    <img src="images/Placeholder-Question-Mark.png"
-                        alt="resume icon" />
-                    <p>Placeholder</p>
+                <a class="page" href="projects.html">
+                    <img src="images/Project.png" alt="project icon" />
+                    <p>Projects</p>
                 </a>
                 <a class="page" target="_blank">
-                    <img src="images/Placeholder-Question-Mark.png"
-                        alt="resume icon" />
+                    <img src="images/Placeholder-Question-Mark.png" alt="resume icon" />
                     <p>Placeholder</p>
                 </a>
             </div>
         </section>
         <!-- End Featured Pages section -->
-        
+
     </main>
+    <!-- Footer -->
+    <footer>
+        <hr />
+        <ul class="page-directory">
+            <li>
+                <a href="index.html">Homepage</a>
+            </li>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li>
+                <a href="projects.html">Projects</a>
+                <ul class="sublist">
+                    <li><a>Project 1</a></li>
+                    <li><a>Project 2</a></li>
+                    <li><a>Project 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+    <!-- End of Footer -->
 </body>
+
 </html>

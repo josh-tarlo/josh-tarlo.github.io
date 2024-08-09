@@ -10,6 +10,7 @@
 a {
     text-decoration: none;
 }
+
 h1 {
     color: var(--white);
     font-size: 50px;
@@ -44,7 +45,7 @@ h2 {
     width: 40vw;
     height: 40vw;
     min-width: 200px;
-    max-width: 350px;
+    max-width: 300px;
     min-height: 200px;
     max-height: 350px;
     border-radius: 20px;
